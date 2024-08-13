@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict A Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Score</h1>
+            <p>Player Score: <span id="playeScore">0</span></p>
+            <p>Computer Score: <span id="computerScore">0</span></p>
+            <p>Next Round in: <span id="timerDisplay">0</span></p>
+        </div>
+        <div>
+            <input type="tel" name="" id="userNum" required autocomplete="off">
+        </div>
+        <div class="res">
+        <input type="text" name="" id="checkNum" disabled>
+        <h3 id="result"></h3>
+        </div>
+        <div>
+        <button type="submit" onclick="check()" id="generate">Predict</button>
+        </div>
+    </div>
+    <footer>
+        <div>
+        <p><em>Note: Guess a number between 1-10 only. Guessing a correct number will earn +1point, else the computer will earn +1point.</em></p>
+        </div>
+    </footer>
+</body>
+<script src="test.js"></script>
+</html>

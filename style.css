@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: #fff;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(133, 133, 133, 0.37);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+input[type=text], input[type=tel]{
+    text-align: center;
+    font-size: 44px;
+    color: #fff;
+}
+
+#userNum{
+    width: 20%;
+    height: 100px;
+    border:none;
+    border-bottom: 3px solid black;
+    margin-bottom: 1rem;
+    background: transparent;
+}
+
+#checkNum{
+    background: none;
+    border: none;
+}
+
+button{
+    width: 90px;
+    height: 30px;
+    background: rgb(76, 248, 76);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+button:hover{
+    opacity: 70%;
+    border: 1px solid black;
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+}
+
+@media only screen and (max-width: 700px){
+.container{
+    width: 90%;
+}
+.container .res{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;   
+}
+}
